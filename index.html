@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wohoo!!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+    
+  </head>
+  <body>
+
+  <div class="container">
+    <div class = "masthead">
+	<img src="images/header.jpg"/>
+  </div>
+	<div class="well" id="Colorpicker">
+	<h3>Colorpicker</h3>
+	<p>Hier komen balkjes om de kleur en de brightness te kiezen, ooit</p>
+   
+   <!-- Colorpicker-->
+    <p>Flat mode.</p>
+    
+	<p id="colorpickerHolder"></p>
+	
+    <script>
+	$('#colorpickerHolder').ColorPicker({flat: true});
+	</script>
+	</div>
+	
+	<div class="well" id="Modes">
+	<h3>Programma's</h3>
+	<p>Hier komen buttons voor standaard programma's en een snelheidschuifbalkje</p>
+	<button type="button" disabled class="btn btn-default btn-lg" onclick="onColorwipeClick()">Colorwipe</button>
+	<button type="button" disabled class="btn btn-default btn-lg" onclick="onPulseClick()">Pulse</button>
+	<button type="button" disabled class="btn btn-default btn-lg" onclick="onPixelwipeClick()">Pixelwipe</button>
+	<button type="button" disabled class="btn btn-default btn-lg" onclick="onRainbowClick()">Rainbowwipe</button>
+	<button type="button" disabled class="btn btn-default btn-lg" onclick="onNothingClick()">Niets</button>
+	
+	</div>
+	<div class="well" id="Environment">
+	<h3>Environment-based</h3>
+	<p>Gebruik de lichtsensor :D!</p>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" disabled> Check me out
+			</label>
+		</div>
+	</div>
+  </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/buttons.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
+
